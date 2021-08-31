@@ -19,8 +19,10 @@ namespace ConsoleAppPL
             int login = BL.Login(cashier);
             if(login <= 0){
                 Console.WriteLine("Can't Login");
-            }else{
-                Console.WriteLine("Wellcome to System...");
+            }else if(login == 1){
+                Console.WriteLine("Menu Manager");
+            }else if(login == 2){
+                Console.WriteLine("Menu Saleman");
             }
         }
         
