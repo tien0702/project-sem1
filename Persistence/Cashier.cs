@@ -20,7 +20,7 @@ namespace Persistance
             }
         }
         
-        private int SALE_ROLE = 0;
+        private int SALE_ROLE = 2;
         private int MANAGER_ROLE = 1;
     }
 }

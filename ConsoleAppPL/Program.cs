@@ -2,6 +2,7 @@
 using System.Text.RegularExpressions;
 using Persistance;
 using BL;
+using System.Collections.Generic;
 
 namespace ConsoleAppPL
 {
@@ -9,6 +10,8 @@ namespace ConsoleAppPL
     {
         static void Main(string[] args)
         {
+            Console.InputEncoding = System.Text.Encoding.Unicode;
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
             string userName, pass;
             int login = 0;
             do{
@@ -19,7 +22,8 @@ namespace ConsoleAppPL
 
                 Cashier cashier = new Cashier(){UserName = userName, Password = pass};
                 CashierBL BL = new CashierBL();
-                login = BL.Login(cashier);
+                login = BL.Login(cashier).Role;
+                Console.WriteLine("Login: " + login);
                 if(login <= 0){
                     Console.WriteLine("Wrong account or password!");
                 }else if(login == 1){
@@ -31,7 +35,7 @@ namespace ConsoleAppPL
         }
 
         static bool IsValidUserName(string userName){
-            Regex regex = new Regex(@"^[a-z0-9]{3,16}$");
+            Regex regex = new Regex(@"^[A-Za-z0-9]{3,16}$");
             if(regex.IsMatch(userName)) return true;
             return false;
         }
