@@ -183,6 +183,7 @@ create table ProductTypes(
 
 insert into ProductTypes(product_id, type_id) value
 			(1, 1);
+            -- Matcha Đậu Đỏ
 
 create table ProductSugar(
 	product_id int,
@@ -197,7 +198,7 @@ insert into ProductSugar(product_id, sugar_id) values
             (1, 5),
             (1, 7),
             (1, 1); 
-            -- 
+            -- Matcha Đậu Đỏ
 
 create table ProductIce(
 	product_id int,
@@ -207,13 +208,13 @@ create table ProductIce(
     foreign key(ice_id) references Ice(ice_id)
 );
 insert into ProductIce(product_id, ice_id) values
-						(1, 0),
-						(1, 3),
-						(1, 5),
-						(1, 7),
-						(1, 1),
-						(1, 2);
-                        -- 
+						(1, 0), -- Không đá
+						(1, 3), -- 30%
+						(1, 5), -- 50%
+						(1, 7), -- 70%
+						(1, 1), -- 100%
+						(1, 2); -- Làm nóng
+                        -- Matcha Đậu Đỏ
 select *from Product, Ice, ProductIce where Product.product_id = ProductIce.product_id and Ice.ice_id = ProductIce.ice_id;
 
 create table InvoiceDetail(
