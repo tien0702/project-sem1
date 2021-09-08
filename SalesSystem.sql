@@ -82,19 +82,19 @@ create table Type(
 );
 
 insert into Type(type_id, type_value) values 
-				(1, 1),
-                (2, -1);
+				(1, 1), -- Làm nóng
+                (2, -1); -- Làm Lạnh
 create table Sugar(
 	sugar_id int not null primary key,
     percent float not null
 );
 
 insert into Sugar(sugar_id, percent) values
-				(1, 1),
-                (7, 0.7),
-                (5, 0.5),
-                (3, 0.3),
-                (0, 0);
+				(1, 1), -- 100% Đường
+                (7, 0.7), -- 70%
+                (5, 0.5), -- 50%
+                (3, 0.3), -- 30%
+                (0, 0); -- Không đường
                 
 create table Ice(
 	ice_id int not null primary key,
@@ -102,12 +102,12 @@ create table Ice(
 );
 
 insert into Ice(ice_id, percent) values 
-				(0, 0),
-                (3, 0.3),
-                (5, 0.5),
-                (7, 0.7),
-                (1, 1),
-                (2, -1);
+				(0, 0), -- Không đá
+                (3, 0.3), -- 30%
+                (5, 0.5), -- 50%
+                (7, 0.7), -- 70%
+                (1, 1), -- 100%
+                (2, -1); -- Làm nóng
 
 create table Product(
 	product_id int auto_increment primary key not null,
