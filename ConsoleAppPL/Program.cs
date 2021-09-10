@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 using Persistance;
 using BL;
 using System.Collections.Generic;
+using System.Text;
 
 namespace ConsoleAppPL
 {
@@ -12,61 +13,33 @@ namespace ConsoleAppPL
         {
             Console.InputEncoding = System.Text.Encoding.Unicode;
             Console.OutputEncoding = System.Text.Encoding.Unicode;
-            string userName, pass;
-            int login = 0;
-            do{
-                Console.Write("User Name: ");
-                while(!IsValidUserName(userName = Console.ReadLine())) Console.Write("User Name Invalid! Please re-enter: ");
-                Console.Write("Password: ");
-                while(!IsValidPassword(pass = GetPassword())) Console.Write("Password Invalid! Please re-enter: ");
+            CashierPL cashierPL = new CashierPL();
+            Cashier cashier = cashierPL.Login();
+            ProductPL productPL = new ProductPL();
+            string[] menu;
 
-                Cashier cashier = new Cashier(){UserName = userName, Password = pass};
-                CashierBL BL = new CashierBL();
-                login = BL.Login(cashier).Role;
-                Console.WriteLine("Login: " + login);
-                if(login <= 0){
-                    Console.WriteLine("Wrong account or password!");
-                }else if(login == 1){
-                    Console.WriteLine("Menu Manager");
-                }else if(login == 2){
-                    Console.WriteLine("Menu Saleman");
-                }
-            }while(login <= 0);
+            int role = cashier.Role;
+            if(role == 2){
+                menu = new string[]{"1. Show Products", "2. Show Invoices Waiting"};
+                cashierPL.ShowMenuSale(cashier, menu);
+            }
+            // ProductBL productBL = new ProductBL();
+            // TypeProduct[] types = productBL.GetProductType(3);
+            // Console.WriteLine("------------------------------------");
+            // foreach(TypeProduct t in types){
+            //     Console.WriteLine("Type: " + t.TypeValue);
+            // }
+            // Console.WriteLine("------------------------------------");
+            // Sugar[] sugars = productBL.GetPruoductSugar(3);
+            // foreach(Sugar s in sugars){
+            //     Console.WriteLine("Sugar: " + s.Percent);
+            // }
+            // Console.WriteLine("------------------------------------");
+            // Ice[] ices = productBL.GetProductIce(3);
+            // foreach(Ice i in ices){
+            //     Console.WriteLine("Ice: " + i.Perscent);
+            // }
         }
 
-        static bool IsValidUserName(string userName){
-            Regex regex = new Regex(@"^[A-Za-z0-9]{3,16}$");
-            if(regex.IsMatch(userName)) return true;
-            return false;
-        }
-        static bool IsValidPassword(string password){
-            Regex regex = new Regex(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$");
-            if(regex.IsMatch(password)) return true;
-            return false;
-        }
-        
-        static string GetPassword()
-        {
-            var pass = string.Empty;
-            ConsoleKey key;
-            do
-            {
-                var keyInfo = Console.ReadKey(intercept: true);
-                key = keyInfo.Key;
-
-                if (key == ConsoleKey.Backspace && pass.Length > 0)
-                {
-                    Console.Write("\b \b");
-                    pass = pass[0..^1];
-                }
-                else if (!char.IsControl(keyInfo.KeyChar))
-                {
-                    Console.Write("*");
-                    pass += keyInfo.KeyChar;
-                }
-            } while (key != ConsoleKey.Enter);
-            Console.WriteLine();
-            return pass;
-        }
     }
 }
