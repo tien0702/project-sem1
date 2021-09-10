@@ -13,6 +13,11 @@ namespace Persistance
         public int Quantity{set; get;}
         public Sugar[] Sugar{set; get;}
         public Ice[] Ice{set; get;}
+        public string ProductInfo{
+            get{
+                return string.Format("{0, -38}│ {1, -10}│ {2, -6}vnđ", ProductName, Quantity, ProductSize.UnitPrice);
+            }
+        }
         public Product(){}
     }
 }
