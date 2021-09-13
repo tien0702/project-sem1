@@ -6,6 +6,5 @@ namespace Persistance
         public int ToppingId{set; get;}
         public string ToppingName{set; get;}
         public double UnitPrice{set; get;}
-        public bool IsActive{set; get;}
     }
 }

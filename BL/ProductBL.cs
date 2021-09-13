@@ -17,9 +17,9 @@ namespace BL
         public List<Product> GetListProduct(){
             return dal.GetListProduct();
         }
-        // public List<Product> SearchByCategory(string category_name){
-        //     return dal.GetByCategory(category_name);
-        // }
+        public List<Product> SearchByCategory(string category_name){
+            return dal.GetByCategory(category_name);
+        }
         public TypeProduct[] GetProductType(int product_id){
             return dal.GetProductTypes(product_id);
         }

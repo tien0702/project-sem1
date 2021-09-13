@@ -67,6 +67,10 @@ namespace DAL
                             });
                         }while(reader.Read());
                     }
+                    else
+                    {
+                        products = null;
+                    }
                     reader.Close();
                 }
                 catch
@@ -81,6 +85,49 @@ namespace DAL
             return products;
         }
 
+        public List<Product> GetByCategory(string category_name){
+            List<Product> products = new List<Product>();
+            lock(connection){
+                try{
+                  connection.Open();
+                    string query = "select *from Product, Category where product_category_id = category_id and category_name like '%"+category_name+"%';";
+                    MySqlDataReader reader = DbHelper.ExecQuery(query);
+                    if(reader.Read()){
+                        do{
+                            products.Add(new Product(){
+                                ProductId = reader.GetInt32("product_id"),
+                                ProductName = reader.GetString("product_name"),
+                                ProductCategory = new Category()
+                                {
+                                    CategoryId = reader.GetInt32("category_id"),
+                                    CategoryName = reader.GetString("category_name")
+                                },
+                                ProductSize = new Size(){
+                                SizeId = 1,
+                                SizeName = "M",
+                                UnitPrice = reader.GetDouble("unit_price")
+                            },
+                                Quantity = reader.GetInt32("quantity")
+                            });
+                        }while(reader.Read());
+                    }
+                    else
+                    {
+                        products = null;
+                    }
+                    reader.Close();  
+                }
+                catch
+                {
+                    products = null;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+            return products;
+        }
         public List<Product> GetListProduct(){
             List<Product> products = new List<Product>();
             lock(connection){
@@ -126,17 +173,19 @@ namespace DAL
             return products;
         }
         public TypeProduct[] GetProductTypes(int product_id){
-            TypeProduct[] types = new TypeProduct[2];
+            List<TypeProduct> types = new List<TypeProduct>();
             lock(connection){
                 try{
                     connection.Open();
-                    string query = "select *from Product, Type, ProductType where '"+product_id+"' = ProductType.product_id and Type.ice_id = ProductType.ice_id;";
+                    string query = "select *from Product, Type, ProductTypes where (ProductTypes.product_id = '"+product_id+
+                    "') and (ProductTypes.type_id = Type.type_id) and (Product.product_id = ProductTypes.product_id);";
                     MySqlDataReader reader = DbHelper.ExecQuery(query);
                     if(reader.Read()){
-                        int i = 0;
                         do{
-                            types[i].TypeID = reader.GetInt32("type_id");
-                            types[i++].TypeValue = reader.GetString("type_value");
+                            types.Add(new TypeProduct(){
+                                TypeID = reader.GetInt32("type_id"),
+                                TypeValue = reader.GetString("type_value")
+                            });
                         }while(reader.Read());
                     }else{
                         types = null;
@@ -147,20 +196,22 @@ namespace DAL
                     connection.Close();
                 }
             }
-            return types;
+            return types.ToArray();
         }
         public Sugar[] GetProductSugar(int product_id){
-            Sugar[] sugars = new Sugar[5];
+            List<Sugar> sugars = new List<Sugar>();
             lock(connection){
                 try{
                     connection.Open();
-                    string query = "select *from Product, Ice, ProductIce where '"+product_id+"' = ProductIce.product_id and Ice.ice_id = ProductIce.ice_id;";
+                    string query = "select *from Product, Sugar, ProductSugar where (ProductSugar.product_id = '"+product_id+
+                    "') and (ProductSugar.sugar_id = Sugar.sugar_id) and (Product.product_id = ProductSugar.product_id);";
                     MySqlDataReader reader = DbHelper.ExecQuery(query);
                     if(reader.Read()){
-                        int i = 0;
                         do{
-                            sugars[i].SugarID = reader.GetInt32("sugar_id");
-                            sugars[i++].Percent = reader.GetString("percent");
+                            sugars.Add(new Sugar(){
+                                SugarID = reader.GetInt32("sugar_id"),
+                                Percent = reader.GetString("percent")
+                            });
                         }while(reader.Read());
                     }else{
                         sugars = null;
@@ -171,20 +222,22 @@ namespace DAL
                     connection.Close();
                 }
             }
-            return sugars;
+            return sugars.ToArray();
         }
         public Ice[] GetProductIce(int product_id){
-            Ice[] ices = new Ice[6];
+            List<Ice> ices = new List<Ice>();
             lock(connection){
                 try{
                     connection.Open();
-                    string query = "select *from Product, Ice, ProductIce where '"+product_id+"' = ProductIce.product_id and Ice.ice_id = ProductIce.ice_id;";
+                    string query = "select *from Product, Ice, ProductIce where (ProductIce.product_id = '"+product_id+
+                    "') and (ProductIce.ice_id = Ice.ice_id) and (Product.product_id = ProductIce.product_id);";
                     MySqlDataReader reader = DbHelper.ExecQuery(query);
                     if(reader.Read()){
-                        int i = 0;
                         do{
-                            ices[i].IceID = reader.GetInt32("ice_id");
-                            ices[i++].Perscent = reader.GetString("percent");
+                            ices.Add(new Ice(){
+                                IceID = reader.GetInt32("ice_id"),
+                                Perscent = reader.GetString("percent")
+                            });
                         }while(reader.Read());
                     }else{
                         ices = null;
@@ -195,7 +248,41 @@ namespace DAL
                     connection.Close();
                 }
             }
-            return ices;
+            return ices.ToArray();
+        }
+        public Topping[] GetToppings(int product_id){
+            List<Topping> toppings = new List<Topping>();
+            lock(connection){
+                try{
+                    connection.Open();
+                    string query = "select *from Product, Topping, ProductToppings where (ProductToppings.product_id = '"+product_id+
+                    "') and (ProductToppings.topping_id = Topping.topping_id) and (Product.product_id = ProductToppings.product_id);";
+                    MySqlDataReader reader = DbHelper.ExecQuery(query);
+                    if(reader.Read()){
+                        do{
+                            toppings.Add(new Topping(){
+                                ToppingId = reader.GetInt32("topping_id"),
+                                ToppingName = reader.GetString("topping_name"),
+                                UnitPrice = reader.GetDouble("unit_price")
+                            });
+                        }while(reader.Read());
+                    }
+                    else
+                    {
+                        toppings = null;
+                    }
+                    reader.Close();
+                }
+                catch
+                {
+                    toppings = null;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+            return toppings.ToArray();
         }
     }
 }
