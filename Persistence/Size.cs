@@ -6,5 +6,10 @@ namespace Persistance
         public int SizeId{set; get;}
         public string SizeName{set; get;}
         public double UnitPrice{set; get;}
+        public Size()
+        {
+            this.SizeId = 1;
+            this.SizeName = "M";
+        }
     }
 }

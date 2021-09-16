@@ -26,6 +26,10 @@ namespace BL
         public Sugar[] GetPruoductSugar(int product_id){
             return dal.GetProductSugar(product_id);
         }
+        public Topping[] GetToppings()
+        {
+            return dal.GetToppings();
+        }
         public Ice[] GetProductIce(int product_id){
             return dal.GetProductIce(product_id);
         }

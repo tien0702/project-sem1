@@ -14,8 +14,10 @@ namespace ConsoleAppPL
             string[] keys = new string[]{"1", "2", "3"};
             int length_menu = menu.Length;
             ProductPL productPL = new ProductPL();
+            InvoicePL invoicePL = new InvoicePL();
             string choice;
             do{
+                Console.Clear();
                 Console.WriteLine("┌────────────────────────────────────────────────────────────────────────────────┐");
                 Console.WriteLine("│                                   {0, -10}                                   │", NAME_STONE);
                 Console.WriteLine("│                             ╞────────────────────╡                             │");
@@ -32,11 +34,7 @@ namespace ConsoleAppPL
                         productPL.Menu(cashier);
                         break;
                     case "2":
-                        break;
-                    case "3":
-                        Console.Clear();
-                        data.TextColor("  ► LOG OUT", ConsoleColor.Blue);
-                        Console.WriteLine();
+                        productPL.MenuProduct(4);
                         break;
                 }
             }while(choice != "3");

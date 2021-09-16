@@ -16,10 +16,11 @@ namespace ConsoleAppPL
             Console.InputEncoding = System.Text.Encoding.Unicode;
             Console.OutputEncoding = System.Text.Encoding.Unicode;
             CashierPL cashierPL = new CashierPL();
-            Cashier cashier;
+            Cashier cashier = new Cashier();;
             ConsoleKey key;
+            cashier.Role = 2;
             do{
-                cashier = Login();
+                // cashier = Login();
                 if(cashier.UserName == "Escape")
                 {
                     data.TextColor(" ► GOODBYE!", ConsoleColor.Blue);
@@ -51,8 +52,30 @@ namespace ConsoleAppPL
                     }
                 }
             }while(true);
-        }
+        }//┌──────────────────────────────────────────────────┐
+        // static Cashier Login()
+        // {
+        //     Console.Clear();
+        //     Console.WriteLine("┌──────────────────────────────────────────────────────────────────────────────────────────────────┐");
+        //     Console.WriteLine("│                                             {0, -10}                                           │", "< RELIFE >");
+        //     Console.WriteLine("│                                       ╞────────────────────╡                                     │");
+        //     Console.WriteLine("╞───────────────────────────────────────────────────────────────────┬──────────────────────────────╡");
+        //     Console.WriteLine("│                         ~~~          -------   LOGIN   -------          ~~~                      │");
+        //     Console.WriteLine("╞──────────────────────────────────────────────────────────────────────────────────────────────────╡");
+        //     Console.WriteLine("│                                                                                                  │");
+        //     Console.WriteLine("│                       ┌──────────────────────────────────────────────────┐                       │");
+        //     Console.WriteLine("│                       │  <> User Name:                                   │                       │");//40, 8
+        //     Console.WriteLine("│                       └──────────────────────────────────────────────────┘                       │");
+        //     Console.WriteLine("│                                                                                                  │");
+        //     Console.WriteLine("│                       ┌──────────────────────────────────────────────────┐                       │");
+        //     Console.WriteLine("│                       │  <> Password:                                    │                       │");
+        //     Console.WriteLine("│                       └──────────────────────────────────────────────────┘                       │");
+        //     Console.WriteLine("│                                                                                                  │");
+        //     Console.WriteLine("└──────────────────────────────────────────────────────────────────────────────────────────────────┘");
+
+        // }
         static Cashier Login(){
+            Console.Clear();
             Cashier cashier = new Cashier();
             CashierBL cashierBL = new CashierBL();
             int role;

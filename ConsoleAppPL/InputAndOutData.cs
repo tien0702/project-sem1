@@ -8,23 +8,20 @@ namespace ConsoleAppPL
     {
         private string CHOICE_INVALID = "▲! Invalid! Please re-enter";
         private string CHOICE = " -- <> Your choice: ";
-        
-        public string Choice(string[] keys){
-            string result;
-            do
+        public int Select(int limitF, int limitR)
+        {
+            return 1;
+        }
+        public void WriteAt(string s, int x, int y)
+        {
+            try
             {
-                TextColor(string.Format("\n " + CHOICE), ConsoleColor.Green);
-                result = ReadString();
-                if(StringExists(result, keys))
-                {
-                    break;
-                }
-                else
-                {
-                    TextColor(string.Format("\n " + CHOICE_INVALID), ConsoleColor.Red);
-                }
-            }while(true);
-            return result;
+                Console.SetCursorPosition(x, y);
+                Console.Write(s);
+            }catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
         public ConsoleKey ChoiceKey(ConsoleKey[] keys)
         {
@@ -44,6 +41,24 @@ namespace ConsoleAppPL
                     TextColor(CHOICE_INVALID, ConsoleColor.Red);
                 }
             }while(true);
+        }
+        
+        public string Choice(string[] keys){
+            string result;
+            do
+            {
+                TextColor(string.Format("\n " + CHOICE), ConsoleColor.Green);
+                result = ReadString();
+                if(StringExists(result, keys))
+                {
+                    break;
+                }
+                else
+                {
+                    TextColor(string.Format("\n " + CHOICE_INVALID), ConsoleColor.Red);
+                }
+            }while(true);
+            return result;
         }
         public bool KeyExists(ConsoleKey key, ConsoleKey[] keys)
         {

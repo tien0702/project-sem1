@@ -250,13 +250,13 @@ namespace DAL
             }
             return ices.ToArray();
         }
-        public Topping[] GetToppings(int product_id){
+        public Topping[] GetToppings()
+        {
             List<Topping> toppings = new List<Topping>();
             lock(connection){
                 try{
                     connection.Open();
-                    string query = "select *from Product, Topping, ProductToppings where (ProductToppings.product_id = '"+product_id+
-                    "') and (ProductToppings.topping_id = Topping.topping_id) and (Product.product_id = ProductToppings.product_id);";
+                    string query = "select *from Topping;";
                     MySqlDataReader reader = DbHelper.ExecQuery(query);
                     if(reader.Read()){
                         do{
