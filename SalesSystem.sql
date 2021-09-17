@@ -188,61 +188,130 @@ create table ProductTypes(
 
 
 insert into ProductTypes(product_id, type_id) value
-			(1, 2), -- Matcha Đậu Đỏ
-            (2, 2), -- Tiger Sugar
-            (3, 1), (3, 2), -- Khoai Môn Hoàng Kim
-            (4, 1), -- Kem Cafe
-            (5, 1), -- Baby Kem Cafe
-            (6, 1), (6, 2), -- Trà Xanh
-            (7, 1), (7, 2), -- Caramel 130
-            (8, 1), (8, 2), -- Khoai Môn Hoàng Kim
-            (9, 1), (9, 2), -- Ba Anh Em
-            (10, 1), (10, 2), -- Vị Nhài
-            (11, 1), (11, 2), -- Hạnh Phúc
-            (12, 1), (12, 2), -- Matcha
-            (13, 1), (13, 2), -- Ô Long
-            (14, 1), (14, 2), -- Ô Long Thái Cực
-            (15, 1), (15, 2), -- Hồng Trà
-            (16, 1), (16, 2), -- Panda
-            (17, 1), (17, 2), -- Kim Cương Đen Okinawa
-            (18, 1), (18, 2), -- Socola
-            (19, 1), (19, 2), -- Bạc hà
-            (20, 1), (20, 2), -- Dâu Tây
-            (21, 1), (21, 2), -- Trân Châu Hoàng Gia
-            (22, 1), (22, 2), -- Trà Sữa
-            -- Fresh Fruit Tea
-            (23, 2), -- Hồng hạc
-            (24, 2), -- Xoài Trân Châu Baby
-            (25, 2), -- Bưởi Trân Châu Sương Mai
-            (26, 2), -- Xoài Trân Châu Sương Mai
-            (27, 2), -- Chanh Leo
-            (28, 2), -- Xoài
-            (29, 2), -- Dứa Nhiệt Đới
-            (30, 2), -- Pha Lê Tuyết
-            (31, 2), -- Bạch Ngọc
-            (32, 2), (32, 1), -- Bưởi Mật Ong
-            -- Macchiato
-            (33, 2), -- Ô Long Kem Phô Mai
-            (34, 2), -- Dâu Tằm kem Phô Mai
-            (35, 2), -- Hồng Trà Kem Phô Mai
-            (36, 2), -- Trà Xanh Kem Phô Mai
-            (37, 2), -- Matcha Kem Phô Mai
-            -- 
-            (39, 2), -- Song Long Bạch Ngọc
-            (40, 2), -- Choco Creamcake hạt dẻ
-            (41, 2), -- Ruby Creamcake Hạt Dẻ
-            (42, 2), -- Chanh Leo Trân Châu Sương Mai 
-            (43, 2), -- 
-            (44, 2), -- 
-            (45, 2), -- 
-            (46, 2), -- 
-            --
-            (47, 2), --
-            (48, 2), --
-            (49, 2), --
-            (50, 2);
-            
-            
+		-- Trà Sữa
+            --Tiger Sugar                        1
+                (1, 2), --lạnh
+            --Matcha Đậu Đỏ                      2
+                (2, 2), --lạnh
+            --Sữa Tươi Khoai Môn Hoàng Kim       3
+                (3, 1), --nóng
+                (3, 2), --lạnh
+            --Sữa Tươi Trân Châu Baby kem Cafe   4
+                (4, 2), --lạnh
+            --Ô Long Trân Châu Baby Kem Cafe     5
+                (5, 2), --lạnh
+            --Trà Xanh                           6
+                (6, 1), --nóng
+                (6, 2), --lạnh
+            --Trà Sữa Ba Anh Em                  7
+                (7, 1), --nóng
+                (7, 2), --lạnh
+            --Trà Xanh Sữa Vị Nhài               8
+                (8, 1), --nóng
+                (8, 2), --lạnh
+            --Trà Sữa Hạnh Phúc                  9
+                (9, 1), --nóng
+                (9, 2), --lạnh
+            --Trà Sữa Matcha                     10
+                (10, 1), --nóng
+                (10, 2), --lạnh
+            --Trà Sữa Ô Long                     11
+                (11, 1), --nóng
+                (11, 2), --lạnh
+            --Ô Long Thái Cực                    12
+                (12, 1), --nóng
+                (12, 2), --lạnh
+            --Trà Sữa Caramal Grilles 130        13
+                (13, 1), --nóng
+                (13, 2), --lạnh
+            --Trà Sữa Khoai Môn Hoàng Kim        14
+                (14, 1), --nóng
+                (14, 2), --lạnh
+            --Trà Sữa Bạc Hà                     15
+                (15, 1), --nóng
+                (15, 2), --lạnh
+            --Trà Sữa Dâu Tây                    16
+                (16, 1), --nóng
+                (16, 2), --lạnh
+            --Trà Sữa Trân Châu Hoàng Gia        17
+                (17, 1), --nóng
+                (17, 2), --lạnh
+            --Hồng Trà                           18
+                (18, 1), --nóng
+                (18, 2), --lạnh
+            --Trà Sữa Panda                      19
+                (19, 1), --nóng
+                (19, 2), --lạnh
+            --Trà Sữa Kim Cương Đen Okinawa      20
+                (20, 1), --nóng
+                (20, 2), --lạnh
+            --Trà Sữa Socola                     21
+                (21, 1), --nóng
+                (21, 2), --lạnh
+            --Trà Sữa                            22
+                (22, 1), --nóng
+                (22, 2), --lạnh
+        -- Fresh Fruit Tea
+            --Trà Dứa Hồng Hạc                  23
+                (23, 2), --lạnh
+            --Hồng Long Xoài Trân Châu Baby     24
+                (24, 2), --lạnh
+            --Probi Bưởi Chân Châu Sương Mai    25
+                (25, 2), --lạnh
+            --Probi Xoài Trân Châu Sương Mai    26
+                (26, 2), --lạnh
+            --Trà Xanh Chanh Leo                27
+                (27, 2), --lạnh
+            --Trà Xanh Xoài                     28
+                (28, 2), --lạnh
+            --Trà Dứa Nhiệt Đới                 29
+                (29, 2), --lạnh
+            --Hồng Long Pha Lê Tuyết            30
+                (30, 2), --lạnh
+            --Hồng Long Bạch Ngọc               31
+                (31, 2), --lạnh
+            --Hồng Trà Bưởi Mật Ong             32
+                (32, 1), --nóng
+                (32, 2), --lạnh  
+        -- Macchiato
+            -- Ô Long Kem Phô Mai                 33
+                (33, 2), --lạnh
+            -- Dâu Tằm Kem Phô Mai                34
+                (34, 2), --lạnh
+            -- Hồng Trà Kem Phô Mai               35
+                (35, 2), --lạnh
+            -- Trà Xanh Kem Phô Mai               36
+                (36, 2), --lạnh
+            -- Socola Kem Phô Mai                 37
+                (37, 2), --lạnh
+            -- Matcha Kem Phô Mai                 38
+                (38, 2), --lạnh
+        -- Special Drink
+            --Song Long Bạch Ngọc                39
+                (39, 2), --lạnh
+            --Choco Creamcake Hạt Dẻ             40
+                (40, 2), --lạnh
+            --Ruby Creamcake Hạt Dẻ              41
+                (41, 2), --lạnh
+            --Chanh Leo Trân Châu Sương Mai      42
+                (42, 2), --lạnh
+            --Probi Bưởi Trân Châu Sương Mai     43
+                (43, 2), --lạnh
+            --Probi Xoài Trân Châu Sương Mai     44
+                (44, 2), --lạnh
+            --Cream - Catcher Cafe               45
+                (45, 2), --lạnh
+            --Energy - Booster Cafe              46
+                (46, 2), --lạnh
+        -- Beauty Drinks
+            --Sữa Chua Thanh Long Hạt Dẻ         47
+                (47, 2), --lạnh
+            --Sữa Chua Dâu Tằm Hoàng Kim         48
+                (48, 2), --lạnh
+            --Sữa Chua Dâu Tằm Hạt Dẻ            49
+                (49, 2), --lạnh
+            --Sữa Chua Trắng                     50
+                (50, 2); --lạnh
 create table ProductSugar(
 	product_id int,
     sugar_id int,
