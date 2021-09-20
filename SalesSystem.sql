@@ -122,61 +122,61 @@ create table Product(
 );
 
 insert into Product(product_category_id, product_name, quantity, is_active, unit_price) values
-					-- Trà Sữa
-					(1, 'Matcha Đậu Đỏ', '50', true, "25000"),
-                    (1, 'Tiger Sugar', '50', true, "25000"),
-                    (1, 'Sữa Tươi Khoai Môn Hoàng Kim', '50', true, "25000"),
-                    (1, 'Sữa Tươi Trân Châu Baby kem Cafe', '50', true, "25000"),
-                    (1, 'Ô Long Trân Châu Baby Kem Cafe', '50', true, "25000"),
-                    (1, 'Trà Xanh', '50', true, "25000"),
-                    (1, 'Trà Sữa Hạnh Phúc', '50', true, "25000"),
-                    (1, 'Trà Sữa Matcha', '50', true, "25000"),
-                    (1, 'Trà Sữa Ô Long', '50', true, "25000"),
-                    (1, 'Ô Long Thái Cực', '50', true, "25000"),
-                    (1, 'Trà Sữa Caramal Grilles 130', '50', true, "25000"),
-                    (1, 'Trà Sữa Khoai Môn Hoàng Kim', '50', true, "25000"),
-                    (1, 'Trà Sữa Ba Anh Em', '50', true, "25000"),
-                    (1, 'Trà Sữa Vị Nhài', '50', true, "25000"),
-                    (1, 'Hồng Trà', '50', true, "25000"),
-                    (1, 'Trà Sữa Panda', '50', true, "25000"),
-                    (1, 'Trà Sữa Kim Cương Đen Okinawa', '50', true, "25000"),
-                    (1, 'Trà Sữa Socola', '50', true, "25000"),
-                    (1, 'Trà Sữa Bạc Hà', '50', true, "25000"),
-                    (1, 'Trà Sữa Dâu Tây', '50', true, "25000"),
-                    (1, 'Trà Sữa Trân Châu Hoàng Gia', '50', true, "25000"),
-                    (1, 'Trà Sữa', '50', true, "25000"),
-                    -- Fresh Fruit Tea
-                    (2, 'Trà Dứa Hồng Hạc', '50', true, "25000"),
-                    (2, 'Hồng Long Xoài Trân Châu Baby', '50', true, "25000"),
-                    (2, 'Probi Bưởi Chân Châu Sương Mai', '50', true, "25000"),
-                    (2, 'Probi Xoài Trân Châu Sương Mai', '50', true, "25000"),
-                    (2, 'Trà Xanh Chanh Leo', '50', true, "25000"),
-                    (2, 'Trà Xanh Xoài', '50', true, "25000"),
-                    (2, 'Trà Dứa Nhiệt Đới', '50', true, "25000"),
-                    (2, 'Hồng Long Pha Lê Tuyết', '50', true, "25000"),
-                    (2, 'Hồng Long Bạch Ngọc', '50', true, "25000"),
-                    (2, 'Hồng Trà Bưởi Mật Ong', '50', true, "25000"),
-                    -- Macchiato
-                    (3, 'Ô Long Kem Phô Mai', '50', true, "25000"),
-                    (3, 'Dâu Tằm Kem Phô Mai', '50', true, "25000"),
-                    (3, 'Hồng Trà Kem Phô Mai', '50', true, "25000"),
-                    (3, 'Trà Xanh Kem Phô Mai', '50', true, "25000"),
-                    (3, 'Socola Kem Phô Mai', '50', true, "25000"),
-                    (3, 'Matcha Kem Phô Mai', '50', true, "25000"),
-                    -- Special Drink
-                    (4, 'Song Long Bạch Ngọc', '50', true, "48000"),
-                    (4, 'Choco Creamcake Hạt Dẻ', '50', true, "25000"),
-					(4, 'Ruby Creamcake Hạt Dẻ', '50', true, "25000"),
-                    (4, 'Chanh Leo Trân Châu Sương Mai', '50', true, "25000"),
-                    (4, 'Probi Bưởi Trân Châu Sương Mai', '50', true, "25000"),
-                    (4, 'Probi Xoài Trân Châu Sương Mai', '50', true, "25000"),
-                    (4, 'Cream - Catcher Cafe', '50', true, "25000"),
-                    (4, 'Energy - Booster Cafe', '50', true, "25000"),
-                    -- Beauty Drinks
-                    (5, 'Sữa Chua Thanh Long Hạt Dẻ', '50', true, "42000"),
-                    (5, 'Sữa Chua Dâu Tằm Hoàng Kim', '50', true, "39000"),
-                    (5, 'Sữa Chua Dâu Tằm Hạt Dẻ', '50', true, "42000"),
-                    (5, 'Sữa Chua Trắng', '50', true, "32000");
+				-- Trà Sữa
+					(1, 'Matcha Đậu Đỏ', '50', true, "25000"),                          --1
+                    (1, 'Tiger Sugar', '50', true, "25000"),                            --2
+                    (1, 'Sữa Tươi Khoai Môn Hoàng Kim', '50', true, "25000"),           --3                          
+                    (1, 'Sữa Tươi Trân Châu Baby kem Cafe', '50', true, "25000"),       --4
+                    (1, 'Ô Long Trân Châu Baby Kem Cafe', '50', true, "25000"),         --5
+                    (1, 'Trà Xanh', '50', true, "25000"),                               --6
+                    (1, 'Trà Sữa Ba Anh Em', '50', true, "25000"),                      --7
+                    (1, 'Trà Xanh Sữa Vị Nhài', '50', true, "25000"),                   --8
+                    (1, 'Trà Sữa Hạnh Phúc', '50', true, "25000"),                      --9
+                    (1, 'Trà Sữa Matcha', '50', true, "25000"),                         --10
+                    (1, 'Trà Sữa Ô Long', '50', true, "25000"),                         --11
+                    (1, 'Ô Long Thái Cực', '50', true, "25000"),                        --12
+                    (1, 'Trà Sữa Caramal Grilles 130', '50', true, "25000"),            --13
+                    (1, 'Trà Sữa Khoai Môn Hoàng Kim', '50', true, "25000"),            --14
+                    (1, 'Trà Sữa Dâu Tây', '50', true, "25000"),                        --15
+                    (1, 'Trà Sữa Trân Châu Hoàng Gia', '50', true, "25000"),            --16
+                    (1, 'Hồng Trà', '50', true, "25000"),                               --17
+                    (1, 'Trà Sữa Panda', '50', true, "25000"),                          --18
+                    (1, 'Trà Sữa Kim Cương Đen Okinawa', '50', true, "25000"),          --19
+                    (1, 'Trà Sữa Socola', '50', true, "25000"),                         --20
+                    (1, 'Trà Sữa Bạc Hà', '50', true, "25000"),                         --21
+                    (1, 'Trà Sữa', '50', true, "25000"),                                --22
+                -- Fresh Fruit Tea
+                    (2, 'Trà Dứa Hồng Hạc', '50', true, "25000"),                       --23
+                    (2, 'Probi Bưởi Trân Châu Sương Mai', '50', true, "25000"),         --24
+                    (2, 'Probi Xoài Trân Châu Sương Mai', '50', true, "25000"),         --25
+                    (2, 'Hồng Long Xoài Trân Châu Baby', '50', true, "25000"),          --26
+                    (2, 'Trà Xanh Chanh Leo', '50', true, "25000"),                     --27
+                    (2, 'Trà Xanh Xoài', '50', true, "25000"),                          --28
+                    (2, 'Trà Dứa Nhiệt Đới', '50', true, "25000"),                      --29
+                    (2, 'Hồng Long Pha Lê Tuyết', '50', true, "25000"),                 --30
+                    (2, 'Hồng Long Bạch Ngọc', '50', true, "25000"),                    --31
+                    (2, 'Hồng Trà Bưởi Mật Ong', '50', true, "25000"),                  --32
+                -- Macchiato
+                    (3, 'Ô Long Kem Phô Mai', '50', true, "25000"),                     --33
+                    (3, 'Dâu Tằm Kem Phô Mai', '50', true, "25000"),                    --34
+                    (3, 'Hồng Trà Kem Phô Mai', '50', true, "25000"),                   --35
+                    (3, 'Trà Xanh Kem Phô Mai', '50', true, "25000"),                   --36
+                    (3, 'Socola Kem Phô Mai', '50', true, "25000"),                     --37
+                    (3, 'Matcha Kem Phô Mai', '50', true, "25000"),                     --38
+                -- Special Drink
+                    (4, 'Song Long Bạch Ngọc', '50', true, "48000"),                    --39
+                    (4, 'Choco Creamcake Hạt Dẻ', '50', true, "25000"),                 --40
+					(4, 'Ruby Creamcake Hạt Dẻ', '50', true, "25000"),                  --41
+                    (4, 'Chanh Leo Trân Châu Sương Mai', '50', true, "25000"),          --42
+                    (4, 'Probi Bưởi Trân Châu Sương Mai', '50', true, "25000"),         --43
+                    (4, 'Probi Xoài Trân Châu Sương Mai', '50', true, "25000"),         --44
+                    (4, 'Cream - Catcher Cafe', '50', true, "25000"),                   --45
+                    (4, 'Energy - Booster Cafe', '50', true, "25000"),                  --46
+                -- Beauty Drinks
+                    (5, 'Sữa Chua Thanh Long Hạt Dẻ', '50', true, "42000"),             --47
+                    (5, 'Sữa Chua Dâu Tằm Hoàng Kim', '50', true, "39000"),             --48
+                    (5, 'Sữa Chua Dâu Tằm Hạt Dẻ', '50', true, "42000"),                --49
+                    (5, 'Sữa Chua Trắng', '50', true, "32000");                         --50
 
 create table ProductTypes(
 	product_id int not null,
