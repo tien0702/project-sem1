@@ -123,60 +123,60 @@ create table Product(
 
 insert into Product(product_category_id, product_name, quantity, is_active, unit_price) values
 				-- Trà Sữa
-					(1, 'Matcha Đậu Đỏ', '50', true, "25000"),                          --1
-                    (1, 'Tiger Sugar', '50', true, "25000"),                            --2
-                    (1, 'Sữa Tươi Khoai Môn Hoàng Kim', '50', true, "25000"),           --3                          
-                    (1, 'Sữa Tươi Trân Châu Baby kem Cafe', '50', true, "25000"),       --4
-                    (1, 'Ô Long Trân Châu Baby Kem Cafe', '50', true, "25000"),         --5
-                    (1, 'Trà Xanh', '50', true, "25000"),                               --6
-                    (1, 'Trà Sữa Ba Anh Em', '50', true, "25000"),                      --7
-                    (1, 'Trà Xanh Sữa Vị Nhài', '50', true, "25000"),                   --8
-                    (1, 'Trà Sữa Hạnh Phúc', '50', true, "25000"),                      --9
-                    (1, 'Trà Sữa Matcha', '50', true, "25000"),                         --10
-                    (1, 'Trà Sữa Ô Long', '50', true, "25000"),                         --11
-                    (1, 'Ô Long Thái Cực', '50', true, "25000"),                        --12
-                    (1, 'Trà Sữa Caramal Grilles 130', '50', true, "25000"),            --13
-                    (1, 'Trà Sữa Khoai Môn Hoàng Kim', '50', true, "25000"),            --14
-                    (1, 'Trà Sữa Dâu Tây', '50', true, "25000"),                        --15
-                    (1, 'Trà Sữa Trân Châu Hoàng Gia', '50', true, "25000"),            --16
-                    (1, 'Hồng Trà', '50', true, "25000"),                               --17
-                    (1, 'Trà Sữa Panda', '50', true, "25000"),                          --18
-                    (1, 'Trà Sữa Kim Cương Đen Okinawa', '50', true, "25000"),          --19
-                    (1, 'Trà Sữa Socola', '50', true, "25000"),                         --20
-                    (1, 'Trà Sữa Bạc Hà', '50', true, "25000"),                         --21
-                    (1, 'Trà Sữa', '50', true, "25000"),                                --22
+					(1, 'Matcha Đậu Đỏ', '50', true, "25000"),                          -- 1
+                    (1, 'Tiger Sugar', '50', true, "25000"),                            -- 2
+                    (1, 'Sữa Tươi Khoai Môn Hoàng Kim', '50', true, "25000"),           -- 3                          
+                    (1, 'Sữa Tươi Trân Châu Baby kem Cafe', '50', true, "25000"),       -- 4
+                    (1, 'Ô Long Trân Châu Baby Kem Cafe', '50', true, "25000"),         -- 5
+                    (1, 'Trà Xanh', '50', true, "25000"),                               -- 6
+                    (1, 'Trà Sữa Ba Anh Em', '50', true, "25000"),                      -- 7
+                    (1, 'Trà Xanh Sữa Vị Nhài', '50', true, "25000"),                   -- 8
+                    (1, 'Trà Sữa Hạnh Phúc', '50', true, "25000"),                      -- 9
+                    (1, 'Trà Sữa Matcha', '50', true, "25000"),                         -- 10
+                    (1, 'Trà Sữa Ô Long', '50', true, "25000"),                         -- 11
+                    (1, 'Ô Long Thái Cực', '50', true, "25000"),                        -- 12
+                    (1, 'Trà Sữa Caramal Grilles 130', '50', true, "25000"),            -- 13
+                    (1, 'Trà Sữa Khoai Môn Hoàng Kim', '50', true, "25000"),            -- 14
+                    (1, 'Trà Sữa Dâu Tây', '50', true, "25000"),                        -- 15
+                    (1, 'Trà Sữa Trân Châu Hoàng Gia', '50', true, "25000"),            -- 16
+                    (1, 'Hồng Trà', '50', true, "25000"),                               -- 17
+                    (1, 'Trà Sữa Panda', '50', true, "25000"),                          -- 18
+                    (1, 'Trà Sữa Kim Cương Đen Okinawa', '50', true, "25000"),          -- 19
+                    (1, 'Trà Sữa Socola', '50', true, "25000"),                         -- 20
+                    (1, 'Trà Sữa Bạc Hà', '50', true, "25000"),                         -- 21
+                    (1, 'Trà Sữa', '50', true, "25000"),                                -- 22
                 -- Fresh Fruit Tea
-                    (2, 'Trà Dứa Hồng Hạc', '50', true, "25000"),                       --23
-                    (2, 'Probi Bưởi Trân Châu Sương Mai', '50', true, "25000"),         --24
-                    (2, 'Probi Xoài Trân Châu Sương Mai', '50', true, "25000"),         --25
-                    (2, 'Hồng Long Xoài Trân Châu Baby', '50', true, "25000"),          --26
-                    (2, 'Trà Xanh Chanh Leo', '50', true, "25000"),                     --27
-                    (2, 'Trà Xanh Xoài', '50', true, "25000"),                          --28
-                    (2, 'Trà Dứa Nhiệt Đới', '50', true, "25000"),                      --29
-                    (2, 'Hồng Long Pha Lê Tuyết', '50', true, "25000"),                 --30
-                    (2, 'Hồng Long Bạch Ngọc', '50', true, "25000"),                    --31
-                    (2, 'Hồng Trà Bưởi Mật Ong', '50', true, "25000"),                  --32
+                    (2, 'Trà Dứa Hồng Hạc', '50', true, "25000"),                       -- 23
+                    (2, 'Probi Bưởi Trân Châu Sương Mai', '50', true, "25000"),         -- 24
+                    (2, 'Probi Xoài Trân Châu Sương Mai', '50', true, "25000"),         -- 25
+                    (2, 'Hồng Long Xoài Trân Châu Baby', '50', true, "25000"),          -- 26
+                    (2, 'Trà Xanh Chanh Leo', '50', true, "25000"),                     -- 27
+                    (2, 'Trà Xanh Xoài', '50', true, "25000"),                          -- 28
+                    (2, 'Trà Dứa Nhiệt Đới', '50', true, "25000"),                      -- 29
+                    (2, 'Hồng Long Pha Lê Tuyết', '50', true, "25000"),                 -- 30
+                    (2, 'Hồng Long Bạch Ngọc', '50', true, "25000"),                    -- 31
+                    (2, 'Hồng Trà Bưởi Mật Ong', '50', true, "25000"),                  -- 32
                 -- Macchiato
-                    (3, 'Ô Long Kem Phô Mai', '50', true, "25000"),                     --33
-                    (3, 'Dâu Tằm Kem Phô Mai', '50', true, "25000"),                    --34
-                    (3, 'Hồng Trà Kem Phô Mai', '50', true, "25000"),                   --35
-                    (3, 'Trà Xanh Kem Phô Mai', '50', true, "25000"),                   --36
-                    (3, 'Socola Kem Phô Mai', '50', true, "25000"),                     --37
-                    (3, 'Matcha Kem Phô Mai', '50', true, "25000"),                     --38
+                    (3, 'Ô Long Kem Phô Mai', '50', true, "25000"),                     -- 33
+                    (3, 'Dâu Tằm Kem Phô Mai', '50', true, "25000"),                    -- 34
+                    (3, 'Hồng Trà Kem Phô Mai', '50', true, "25000"),                   -- 35
+                    (3, 'Trà Xanh Kem Phô Mai', '50', true, "25000"),                   -- 36
+                    (3, 'Socola Kem Phô Mai', '50', true, "25000"),                     -- 37
+                    (3, 'Matcha Kem Phô Mai', '50', true, "25000"),                     -- 38
                 -- Special Drink
-                    (4, 'Song Long Bạch Ngọc', '50', true, "48000"),                    --39
-                    (4, 'Choco Creamcake Hạt Dẻ', '50', true, "25000"),                 --40
-					(4, 'Ruby Creamcake Hạt Dẻ', '50', true, "25000"),                  --41
-                    (4, 'Chanh Leo Trân Châu Sương Mai', '50', true, "25000"),          --42
-                    (4, 'Probi Bưởi Trân Châu Sương Mai', '50', true, "25000"),         --43
-                    (4, 'Probi Xoài Trân Châu Sương Mai', '50', true, "25000"),         --44
-                    (4, 'Cream - Catcher Cafe', '50', true, "25000"),                   --45
-                    (4, 'Energy - Booster Cafe', '50', true, "25000"),                  --46
+                    (4, 'Song Long Bạch Ngọc', '50', true, "48000"),                    -- 39
+                    (4, 'Choco Creamcake Hạt Dẻ', '50', true, "25000"),                 -- 40
+					(4, 'Ruby Creamcake Hạt Dẻ', '50', true, "25000"),                  -- 41
+                    (4, 'Chanh Leo Trân Châu Sương Mai', '50', true, "25000"),          -- 42
+                    (4, 'Probi Bưởi Trân Châu Sương Mai', '50', true, "25000"),         -- 43
+                    (4, 'Probi Xoài Trân Châu Sương Mai', '50', true, "25000"),         -- 44
+                    (4, 'Cream - Catcher Cafe', '50', true, "25000"),                   -- 45
+                    (4, 'Energy - Booster Cafe', '50', true, "25000"),                  -- 46
                 -- Beauty Drinks
-                    (5, 'Sữa Chua Thanh Long Hạt Dẻ', '50', true, "42000"),             --47
-                    (5, 'Sữa Chua Dâu Tằm Hoàng Kim', '50', true, "39000"),             --48
-                    (5, 'Sữa Chua Dâu Tằm Hạt Dẻ', '50', true, "42000"),                --49
-                    (5, 'Sữa Chua Trắng', '50', true, "32000");                         --50
+                    (5, 'Sữa Chua Thanh Long Hạt Dẻ', '50', true, "42000"),             -- 47
+                    (5, 'Sữa Chua Dâu Tằm Hoàng Kim', '50', true, "39000"),             -- 48
+                    (5, 'Sữa Chua Dâu Tằm Hạt Dẻ', '50', true, "42000"),                -- 49
+                    (5, 'Sữa Chua Trắng', '50', true, "32000");                         -- 50
 
 create table ProductTypes(
 	product_id int not null,
@@ -189,129 +189,129 @@ create table ProductTypes(
 
 insert into ProductTypes(product_id, type_id) value
 		-- Trà Sữa
-            --Tiger Sugar                        1
-                (1, 2), --lạnh
-            --Matcha Đậu Đỏ                      2
-                (2, 2), --lạnh
-            --Sữa Tươi Khoai Môn Hoàng Kim       3
-                (3, 1), --nóng
-                (3, 2), --lạnh
-            --Sữa Tươi Trân Châu Baby kem Cafe   4
-                (4, 2), --lạnh
-            --Ô Long Trân Châu Baby Kem Cafe     5
-                (5, 2), --lạnh
-            --Trà Xanh                           6
-                (6, 1), --nóng
-                (6, 2), --lạnh
+            -- Tiger Sugar                        1
+                (1, 2), -- lạnh
+            -- Matcha Đậu Đỏ                      2
+                (2, 2), -- lạnh
+            -- Sữa Tươi Khoai Môn Hoàng Kim       3
+                (3, 1), -- nóng
+                (3, 2), -- lạnh
+            -- Sữa Tươi Trân Châu Baby kem Cafe   4
+                (4, 2), -- lạnh
+            -- Ô Long Trân Châu Baby Kem Cafe     5
+                (5, 2), -- lạnh
+            -- Trà Xanh                           6
+                (6, 1), -- nóng
+                (6, 2), -- lạnh
             --Trà Sữa Ba Anh Em                  7
                 (7, 1), --nóng
                 (7, 2), --lạnh
-            --Trà Xanh Sữa Vị Nhài               8
-                (8, 1), --nóng
-                (8, 2), --lạnh
-            --Trà Sữa Hạnh Phúc                  9
-                (9, 1), --nóng
-                (9, 2), --lạnh
-            --Trà Sữa Matcha                     10
-                (10, 1), --nóng
-                (10, 2), --lạnh
-            --Trà Sữa Ô Long                     11
-                (11, 1), --nóng
-                (11, 2), --lạnh
-            --Ô Long Thái Cực                    12
-                (12, 1), --nóng
-                (12, 2), --lạnh
-            --Trà Sữa Caramal Grilles 130        13
-                (13, 1), --nóng
-                (13, 2), --lạnh
-            --Trà Sữa Khoai Môn Hoàng Kim        14
-                (14, 1), --nóng
-                (14, 2), --lạnh
-            --Trà Sữa Bạc Hà                     15
-                (15, 1), --nóng
-                (15, 2), --lạnh
-            --Trà Sữa Dâu Tây                    16
-                (16, 1), --nóng
-                (16, 2), --lạnh
-            --Trà Sữa Trân Châu Hoàng Gia        17
-                (17, 1), --nóng
-                (17, 2), --lạnh
-            --Hồng Trà                           18
-                (18, 1), --nóng
-                (18, 2), --lạnh
-            --Trà Sữa Panda                      19
-                (19, 1), --nóng
-                (19, 2), --lạnh
-            --Trà Sữa Kim Cương Đen Okinawa      20
-                (20, 1), --nóng
-                (20, 2), --lạnh
-            --Trà Sữa Socola                     21
-                (21, 1), --nóng
-                (21, 2), --lạnh
-            --Trà Sữa                            22
-                (22, 1), --nóng
-                (22, 2), --lạnh
+            -- Trà Xanh Sữa Vị Nhài               8
+                (8, 1), -- nóng
+                (8, 2), -- lạnh
+            -- Trà Sữa Hạnh Phúc                  9
+                (9, 1), -- nóng
+                (9, 2), -- lạnh
+            -- Trà Sữa Matcha                     10
+                (10, 1), -- nóng
+                (10, 2), -- lạnh
+            -- Trà Sữa Ô Long                     11
+                (11, 1), -- nóng
+                (11, 2), -- lạnh
+            -- Ô Long Thái Cực                    12
+                (12, 1), -- nóng
+                (12, 2), -- lạnh
+            -- Trà Sữa Caramal Grilles 130        13
+                (13, 1), -- nóng
+                (13, 2), -- lạnh
+            -- Trà Sữa Khoai Môn Hoàng Kim        14
+                (14, 1), -- nóng
+                (14, 2), -- lạnh
+            -- Trà Sữa Bạc Hà                     15
+                (15, 1), -- nóng
+                (15, 2), -- lạnh
+            -- Trà Sữa Dâu Tây                    16
+                (16, 1), -- nóng
+                (16, 2), -- lạnh
+            -- Trà Sữa Trân Châu Hoàng Gia        17
+                (17, 1), -- nóng
+                (17, 2), -- lạnh
+            -- Hồng Trà                           18
+                (18, 1), -- nóng
+                (18, 2), -- lạnh
+            -- Trà Sữa Panda                      19
+                (19, 1), -- nóng
+                (19, 2), -- lạnh
+            -- Trà Sữa Kim Cương Đen Okinawa      20
+                (20, 1), -- nóng
+                (20, 2), -- lạnh
+            -- Trà Sữa Socola                     21
+                (21, 1), -- nóng
+                (21, 2), -- lạnh
+            -- Trà Sữa                            22
+                (22, 1), -- nóng
+                (22, 2), -- lạnh
         -- Fresh Fruit Tea
-            --Trà Dứa Hồng Hạc                  23
-                (23, 2), --lạnh
-            --Hồng Long Xoài Trân Châu Baby     24
-                (24, 2), --lạnh
-            --Probi Bưởi Chân Châu Sương Mai    25
-                (25, 2), --lạnh
-            --Probi Xoài Trân Châu Sương Mai    26
-                (26, 2), --lạnh
-            --Trà Xanh Chanh Leo                27
-                (27, 2), --lạnh
-            --Trà Xanh Xoài                     28
-                (28, 2), --lạnh
-            --Trà Dứa Nhiệt Đới                 29
-                (29, 2), --lạnh
-            --Hồng Long Pha Lê Tuyết            30
-                (30, 2), --lạnh
-            --Hồng Long Bạch Ngọc               31
-                (31, 2), --lạnh
-            --Hồng Trà Bưởi Mật Ong             32
-                (32, 1), --nóng
-                (32, 2), --lạnh  
+            -- Trà Dứa Hồng Hạc                  23
+                (23, 2), -- lạnh
+            -- Hồng Long Xoài Trân Châu Baby     24
+                (24, 2), -- lạnh
+            -- Probi Bưởi Chân Châu Sương Mai    25
+                (25, 2), -- lạnh
+            -- Probi Xoài Trân Châu Sương Mai    26
+                (26, 2), -- lạnh
+            -- Trà Xanh Chanh Leo                27
+                (27, 2), -- lạnh
+            -- Trà Xanh Xoài                     28
+                (28, 2), -- lạnh
+            -- Trà Dứa Nhiệt Đới                 29
+                (29, 2), -- lạnh
+            -- Hồng Long Pha Lê Tuyết            30
+                (30, 2), -- lạnh
+            -- Hồng Long Bạch Ngọc               31
+                (31, 2), -- lạnh
+            -- Hồng Trà Bưởi Mật Ong             32
+                (32, 1), -- nóng
+                (32, 2), -- lạnh  
         -- Macchiato
             -- Ô Long Kem Phô Mai                 33
-                (33, 2), --lạnh
+                (33, 2), -- lạnh
             -- Dâu Tằm Kem Phô Mai                34
-                (34, 2), --lạnh
+                (34, 2), -- lạnh
             -- Hồng Trà Kem Phô Mai               35
-                (35, 2), --lạnh
+                (35, 2), -- lạnh
             -- Trà Xanh Kem Phô Mai               36
-                (36, 2), --lạnh
+                (36, 2), -- lạnh
             -- Socola Kem Phô Mai                 37
-                (37, 2), --lạnh
+                (37, 2), -- lạnh
             -- Matcha Kem Phô Mai                 38
-                (38, 2), --lạnh
+                (38, 2), -- lạnh
         -- Special Drink
-            --Song Long Bạch Ngọc                39
-                (39, 2), --lạnh
-            --Choco Creamcake Hạt Dẻ             40
-                (40, 2), --lạnh
-            --Ruby Creamcake Hạt Dẻ              41
-                (41, 2), --lạnh
-            --Chanh Leo Trân Châu Sương Mai      42
-                (42, 2), --lạnh
-            --Probi Bưởi Trân Châu Sương Mai     43
-                (43, 2), --lạnh
-            --Probi Xoài Trân Châu Sương Mai     44
-                (44, 2), --lạnh
-            --Cream - Catcher Cafe               45
-                (45, 2), --lạnh
-            --Energy - Booster Cafe              46
-                (46, 2), --lạnh
+            -- Song Long Bạch Ngọc                39
+                (39, 2), -- lạnh
+            -- Choco Creamcake Hạt Dẻ             40
+                (40, 2), -- lạnh
+            -- Ruby Creamcake Hạt Dẻ              41
+                (41, 2), -- lạnh
+            -- Chanh Leo Trân Châu Sương Mai      42
+                (42, 2), -- lạnh
+            -- Probi Bưởi Trân Châu Sương Mai     43
+                (43, 2), -- lạnh
+            -- Probi Xoài Trân Châu Sương Mai     44
+                (44, 2), -- lạnh
+            -- Cream - Catcher Cafe               45
+                (45, 2), -- lạnh
+            -- Energy - Booster Cafe              46
+                (46, 2), -- lạnh
         -- Beauty Drinks
-            --Sữa Chua Thanh Long Hạt Dẻ         47
-                (47, 2), --lạnh
-            --Sữa Chua Dâu Tằm Hoàng Kim         48
-                (48, 2), --lạnh
-            --Sữa Chua Dâu Tằm Hạt Dẻ            49
-                (49, 2), --lạnh
-            --Sữa Chua Trắng                     50
-                (50, 2); --lạnh
+            -- Sữa Chua Thanh Long Hạt Dẻ         47
+                (47, 2), -- lạnh
+            -- Sữa Chua Dâu Tằm Hoàng Kim         48
+                (48, 2), -- lạnh
+            -- Sữa Chua Dâu Tằm Hạt Dẻ            49
+                (49, 2), -- lạnh
+            -- Sữa Chua Trắng                     50
+                (50, 2); -- lạnh
 create table ProductSugar(
 	product_id int,
     sugar_id int,
@@ -330,394 +330,394 @@ insert into ProductSugar(product_id, sugar_id) values
 -- 1- Không đường, 2- 30%, 3- 50%, 4- 70%, 5- 100%
 		-- Trà Sữa
             --Tiger Sugar                        1
-                (1, 7), --70%
-                (1, 1), --100%
-            --Matcha Đậu Đỏ                      2
-                (2, 0), --0%
-                (2, 3), --30%
-                (2, 5), --50%
-                (2, 7), --70%
-                (2, 1), --100%
-            --Sữa Tươi Khoai Môn Hoàng Kim       3
-                (3, 7), --70%
-                (3, 1), --100%
-            --Sữa Tươi Trân Châu Baby kem Cafe   4
-                (4, 0), --0%
-                (4, 3), --30%
-                (4, 5), --50%
-                (4, 7), --70%
-                (4, 1), --100%
-            --Ô Long Trân Châu Baby Kem Cafe     5
-                (5, 0), --0%
-                (5, 3), --30%
-                (5, 5), --50%
-                (5, 7), --70%
-                (5, 1), --100%
-            --Trà Xanh                           6
-                (6, 0), --0%
-                (6, 3), --30%
-                (6, 5), --50%
-                (6, 7), --70%
-                (6, 1), --100%
-            --Trà Sữa Ba Anh Em                  7
-                (7, 0), --0%
-                (7, 3), --30%
-                (7, 5), --50%
-                (7, 7), --70%
-                (7, 1), --100%
-            --Trà Xanh Sữa Vị Nhài               8
-                (8, 0), --0%
-                (8, 3), --30%
-                (8, 5), --50%
-                (8, 7), --70%
-                (8, 1), --100%
-            --Trà Sữa Hạnh Phúc                  9
-                (9, 0), --0%
-                (9, 3), --30%
-                (9, 5), --50%
-                (9, 7), --70%
-                (9, 1), --100%
-            --Trà Sữa Matcha                     10
-                (10, 0), --0%
-                (10), 3), --30%
-                (10, 5), --50%
-                (10, 7), --70%
-                (10, 1), --100%
-            --Trà Sữa Ô Long                     11
-                (11, 0), --0%
-                (11, 3), --30%
-                (11, 5), --50%
-                (11, 7), --70%
-                (11, 1), --100%
-            --Ô Long Thái Cực                    12
-                (12, 0), --0%
-                (12, 3), --30%
-                (12, 5), --50%
-                (12, 7), --70%
-                (12, 1), --100%
-            --Trà Sữa Caramal Grilles 130        13
-                (13, 7), --70%
-                (13, 1), --100%
-            --Trà Sữa Khoai Môn Hoàng Kim        14
-                (14, 0), --0%
-                (14, 3), --30%
-                (14, 5), --50%
-                (14, 7), --70%
-                (14, 1), --100%
-            --Trà Sữa Bạc Hà                     15
-                (15, 7), --70%
-                (15, 1), --100%
-            --Trà Sữa Dâu Tây                    16
-                (16, 0), --0%
-                (16, 3), --30%
-                (16, 5), --50%
-                (16, 7), --70%
-                (16, 1), --100%
-            --Trà Sữa Trân Châu Hoàng Gia        17
-                (17, 0), --0%
-                (17, 3), --30%
-                (17, 5), --50%
-                (17, 7), --70%
-                (17, 1), --100%
-            --Hồng Trà                           18
-                (18, 0), --0%
-                (18, 3), --30%
-                (18, 5), --50%
-                (18, 7), --70%
-                (18, 1), --100%
-            --Trà Sữa Panda                      19
-                (19, 0), --0%
-                (19, 3), --30%
-                (19, 5), --50%
-                (19, 7), --70%
-                (19, 1), --100%
-            --Trà Sữa Kim Cương Đen Okinawa      20
-                (20, 7), --70%
-                (20, 1), --100%
-            --Trà Sữa Socola                     21
-                (21, 0), --0%
-                (21, 3), --30%
-                (21, 5), --50%
-                (21, 7), --70%
-                (21, 1), --100%
-            --Trà Sữa                            22
-                (22, 0), --0%
-                (22, 3), --30%
-                (22, 5), --50%
-                (22, 7), --70%
-                (22, 1), --100%
+                (1, 7), -- 70%
+                (1, 1), -- 100%
+            -- Matcha Đậu Đỏ                      2
+                (2, 0), -- 0%
+                (2, 3), -- 30%
+                (2, 5), -- 50%
+                (2, 7), -- 70%
+                (2, 1), -- 100%
+            -- Sữa Tươi Khoai Môn Hoàng Kim       3
+                (3, 7), -- 70%
+                (3, 1), -- 100%
+            -- Sữa Tươi Trân Châu Baby kem Cafe   4
+                (4, 0), -- 0%
+                (4, 3), -- 30%
+                (4, 5), -- 50%
+                (4, 7), -- 70%
+                (4, 1), -- 100%
+            -- Ô Long Trân Châu Baby Kem Cafe     5
+                (5, 0), -- 0%
+                (5, 3), -- 30%
+                (5, 5), -- 50%
+                (5, 7), -- 70%
+                (5, 1), -- 100%
+            -- Trà Xanh                           6
+                (6, 0), -- 0%
+                (6, 3), -- 30%
+                (6, 5), -- 50%
+                (6, 7), -- 70%
+                (6, 1), -- 100%
+            -- Trà Sữa Ba Anh Em                  7
+                (7, 0), -- 0%
+                (7, 3), -- 30%
+                (7, 5), -- 50%
+                (7, 7), -- 70%
+                (7, 1), -- 100%
+            -- Trà Xanh Sữa Vị Nhài               8
+                (8, 0), -- 0%
+                (8, 3), -- 30%
+                (8, 5), -- 50%
+                (8, 7), -- 70%
+                (8, 1), -- 100%
+            -- Trà Sữa Hạnh Phúc                  9
+                (9, 0), -- 0%
+                (9, 3), -- 30%
+                (9, 5), -- 50%
+                (9, 7), -- 70%
+                (9, 1), -- 100%
+            -- Trà Sữa Matcha                     10
+                (10, 0), -- 0%
+                (10, 3), -- 30%
+                (10, 5), -- 50%
+                (10, 7), -- 70%
+                (10, 1), -- 100%
+            -- Trà Sữa Ô Long                     11
+                (11, 0), -- 0%
+                (11, 3), -- 30%
+                (11, 5), -- 50%
+                (11, 7), -- 70%
+                (11, 1), -- 100%
+            -- Ô Long Thái Cực                    12
+                (12, 0), -- 0%
+                (12, 3), -- 30%
+                (12, 5), -- 50%
+                (12, 7), -- 70%
+                (12, 1), -- 100%
+            -- Trà Sữa Caramal Grilles 130        13
+                (13, 7), -- 70%
+                (13, 1), -- 100%
+            -- Trà Sữa Khoai Môn Hoàng Kim        14
+                (14, 0), -- 0%
+                (14, 3), -- 30%
+                (14, 5), -- 50%
+                (14, 7), -- 70%
+                (14, 1), -- 100%
+            -- Trà Sữa Bạc Hà                     15
+                (15, 7), -- 70%
+                (15, 1), -- 100%
+            -- Trà Sữa Dâu Tây                    16
+                (16, 0), -- 0%
+                (16, 3), -- 30%
+                (16, 5), -- 50%
+                (16, 7), -- 70%
+                (16, 1), -- 100%
+            -- Trà Sữa Trân Châu Hoàng Gia        17
+                (17, 0), -- 0%
+                (17, 3), -- 30%
+                (17, 5), -- 50%
+                (17, 7), -- 70%
+                (17, 1), -- 100%
+            -- Hồng Trà                           18
+                (18, 0), -- 0%
+                (18, 3), -- 30%
+                (18, 5), -- 50%
+                (18, 7), -- 70%
+                (18, 1), -- 100%
+            -- Trà Sữa Panda                      19
+                (19, 0), -- 0%
+                (19, 3), -- 30%
+                (19, 5), -- 50%
+                (19, 7), -- 70%
+                (19, 1), -- 100%
+            -- Trà Sữa Kim Cương Đen Okinawa      20
+                (20, 7), -- 70%
+                (20, 1), -- 100%
+            -- Trà Sữa Socola                     21
+                (21, 0), -- 0%
+                (21, 3), -- 30%
+                (21, 5), -- 50%
+                (21, 7), -- 70%
+                (21, 1), -- 100%
+            -- Trà Sữa                            22
+                (22, 0), -- 0%
+                (22, 3), -- 30%
+                (22, 5), -- 50%
+                (22, 7), -- 70%
+                (22, 1), -- 100%
         -- Fresh Fruit Tea
             --Trà Dứa Hồng Hạc                  23
-                (23, 0), --0%
-                (23, 3), --30%
-                (23, 5), --50%
-                (23, 7), --70%
-                (23, 1), --100%
-            --Hồng Long Xoài Trân Châu Baby     24
-                (24, 3), --30%
-                (24, 5), --50%
-                (24, 7), --70%
-                (24, 1), --100%
-            --Probi Bưởi Chân Châu Sương Mai    25
-                (25, 0), --0%
-                (25, 3), --30%
-                (25, 5), --50%
-                (25, 7), --70%
-                (25, 1), --100%
-            --Probi Xoài Trân Châu Sương Mai    26
-                (26, 0), --0%
-                (26, 3), --30%
-                (26, 5), --50%
-                (26, 7), --70%
-                (26, 1), --100%
-            --Trà Xanh Chanh Leo                27
-                (27, 0), --0%
-                (27, 3), --30%
-                (27, 5), --50%
-                (27, 7), --70%
-                (27, 1), --100%
-            --Trà Xanh Xoài                     28
-                (28, 0), --0%
-                (28, 3), --30%
-                (28, 5), --50%
-                (28, 7), --70%
-                (28, 1), --100%
-            --Trà Dứa Nhiệt Đới                 29
-                (29, 0), --0%
-                (29, 3), --30%
-                (29, 5), --50%
-                (29, 7), --70%
-                (29, 1), --100%
-            --Hồng Long Pha Lê Tuyết            30
-                (30, 1), --100%
-            --Hồng Long Bạch Ngọc               31
-                (31, 1), --100%
-            --Hồng Trà Bưởi Mật Ong             32
-                (32, 0), --0%
-                (32, 3), --30%
-                (32, 5), --50%
-                (32, 7), --70%
-                (32, 1), --100% 
+                (23, 0), -- 0%
+                (23, 3), -- 30%
+                (23, 5), -- 50%
+                (23, 7), -- 70%
+                (23, 1), -- 100%
+            -- Hồng Long Xoài Trân Châu Baby     24
+                (24, 3), -- 30%
+                (24, 5), -- 50%
+                (24, 7), -- 70%
+                (24, 1), -- 100%
+            -- Probi Bưởi Chân Châu Sương Mai    25
+                (25, 0), -- 0%
+                (25, 3), -- 30%
+                (25, 5), -- 50%
+                (25, 7), -- 70%
+                (25, 1), -- 100%
+            -- Probi Xoài Trân Châu Sương Mai    26
+                (26, 0), -- 0%
+                (26, 3), -- 30%
+                (26, 5), -- 50%
+                (26, 7), -- 70%
+                (26, 1), -- 100%
+            -- Trà Xanh Chanh Leo                27
+                (27, 0), -- 0%
+                (27, 3), -- 30%
+                (27, 5), -- 50%
+                (27, 7), -- 70%
+                (27, 1), -- 100%
+            -- Trà Xanh Xoài                     28
+                (28, 0), -- 0%
+                (28, 3), -- 30%
+                (28, 5), -- 50%
+                (28, 7), -- 70%
+                (28, 1), -- 100%
+            -- Trà Dứa Nhiệt Đới                 29
+                (29, 0), -- 0%
+                (29, 3), -- 30%
+                (29, 5), -- 50%
+                (29, 7), -- 70%
+                (29, 1), -- 100%
+            -- Hồng Long Pha Lê Tuyết            30
+                (30, 1), -- 100%
+            -- Hồng Long Bạch Ngọc               31
+                (31, 1), -- 100%
+            -- Hồng Trà Bưởi Mật Ong             32
+                (32, 0), -- 0%
+                (32, 3), -- 30%
+                (32, 5), -- 50%
+                (32, 7), -- 70%
+                (32, 1), -- 100% 
         -- Macchiato
             -- Ô Long Kem Phô Mai                 33
-                (33, 0), --0%
-                (33, 3), --30%
-                (33, 5), --50%
-                (33, 7), --70%
-                (33, 1), --100% 
+                (33, 0), -- 0%
+                (33, 3), -- 30%
+                (33, 5), -- 50%
+                (33, 7), -- 70%
+                (33, 1), -- 100% 
             -- Dâu Tằm Kem Phô Mai                34
-                (34, 0), --0%
-                (34, 3), --30%
-                (34, 5), --50%
-                (34, 7), --70%
-                (34, 1), --100% 
+                (34, 0), -- 0%
+                (34, 3), -- 30%
+                (34, 5), -- 50%
+                (34, 7), -- 70%
+                (34, 1), -- 100% 
             -- Hồng Trà Kem Phô Mai               35
-                (35, 0), --0%
-                (35, 3), --30%
-                (35, 5), --50%
-                (35, 7), --70%
-                (35, 1), --100% 
+                (35, 0), -- 0%
+                (35, 3), -- 30%
+                (35, 5), -- 50%
+                (35, 7), -- 70%
+                (35, 1), -- 100% 
             -- Trà Xanh Kem Phô Mai               36
-                (36, 7), --70%
-                (36, 1), --100%
+                (36, 7), -- 70%
+                (36, 1), -- 100%
             -- Socola Kem Phô Mai                 37
-                (37, 0), --0%
-                (37, 3), --30%
-                (37, 5), --50%
-                (37, 7), --70%
-                (37, 1), --100% 
+                (37, 0), -- 0%
+                (37, 3), -- 30%
+                (37, 5), -- 50%
+                (37, 7), -- 70%
+                (37, 1), -- 100% 
             -- Matcha Kem Phô Mai                 38
-                (38, 0), --0%
-                (38, 3), --30%
-                (38, 5), --50%
-                (38, 7), --70%
-                (38, 1), --100% 
+                (38, 0), -- 0%
+                (38, 3), -- 30%
+                (38, 5), -- 50%
+                (38, 7), -- 70%
+                (38, 1), -- 100% 
         -- Special Drink
-            --Song Long Bạch Ngọc                39
-                (39, 0), --0%
-                (39, 3), --30%
-                (39, 5), --50%
-                (39, 7), --70%
-                (39, 1), --100%
-            --Choco Creamcake Hạt Dẻ             40
-                (40, 0), --0%
-                (40, 3), --30%
-                (40, 5), --50%
-                (40, 7), --70%
-                (40, 1), --100%
-            --Ruby Creamcake Hạt Dẻ              41
-                (41, 0), --0%
-                (41, 3), --30%
-                (41, 5), --50%
-                (41, 7), --70%
-                (41, 1), --100%
-            --Chanh Leo Trân Châu Sương Mai      42
-                (42, 1), --100%
-            --Probi Bưởi Trân Châu Sương Mai     43
-                (43, 0), --0%
-                (43, 3), --30%
-                (43, 5), --50%
-                (43, 7), --70%
-                (43, 1), --100%
-            --Probi Xoài Trân Châu Sương Mai     44
-                (44, 0), --0%
-                (44, 3), --30%
-                (44, 5), --50%
-                (44, 7), --70%
-                (44, 1), --100%
-            --Cream - Catcher Cafe               45
+            -- Song Long Bạch Ngọc                39
+                (39, 0), -- 0%
+                (39, 3), -- 30%
+                (39, 5), -- 50%
+                (39, 7), -- 70%
+                (39, 1), -- 100%
+            -- Choco Creamcake Hạt Dẻ             40
+                (40, 0), -- 0%
+                (40, 3), -- 30%
+                (40, 5), -- 50%
+                (40, 7), -- 70%
+                (40, 1), -- 100%
+            -- Ruby Creamcake Hạt Dẻ              41
+                (41, 0), -- 0%
+                (41, 3), -- 30%
+                (41, 5), -- 50%
+                (41, 7), -- 70%
+                (41, 1), -- 100%
+            -- Chanh Leo Trân Châu Sương Mai      42
+                (42, 1), -- 100%
+            -- Probi Bưởi Trân Châu Sương Mai     43
+                (43, 0), -- 0%
+                (43, 3), -- 30%
+                (43, 5), -- 50%
+                (43, 7), -- 70%
+                (43, 1), -- 100%
+            -- Probi Xoài Trân Châu Sương Mai     44
+                (44, 0), -- 0%
+                (44, 3), -- 30%
+                (44, 5), -- 50%
+                (44, 7), -- 70%
+                (44, 1), -- 100%
+            -- Cream - Catcher Cafe               45
                 (45, 7), --70%
                 (45, 1)  --100%
-            --Energy - Booster Cafe              46
-                (46, 7), --70%
-                (46, 1); --100%
+            -- Energy - Booster Cafe              46
+                (46, 7), -- 70%
+                (46, 1); -- 100%
         -- Beauty Drinks
-            --Sữa Chua Thanh Long Hạt Dẻ         47
-            --Sữa Chua Dâu Tằm Hoàng Kim         48
-            --Sữa Chua Dâu Tằm Hạt Dẻ            49
-            --Sữa Chua Trắng                     50
+            -- Sữa Chua Thanh Long Hạt Dẻ         47
+            -- Sữa Chua Dâu Tằm Hoàng Kim         48
+            -- Sữa Chua Dâu Tằm Hạt Dẻ            49
+            -- Sữa Chua Trắng                     50
             
 insert into ProductIce(product_id, ice_id) values
 -- 1- Không đá mát, 2- 30%, 3-50%, 4-70%, 5- 100%, 6- Không đá, 7-Làm nóng
 				-- Trà Sữa
-			--Tiger Sugar                        1
+			-- Tiger Sugar                        1
                 (1, 0), -- Không đá
                 (1, 3), -- 30% đá
                 (1, 5), -- 50% đá
                 (1, 7), -- 70% đá
                 (1, 1), -- 100% đá
                 (1, -1), -- Làm nóng
-            --Matcha Đậu Đỏ                      2
+            -- Matcha Đậu Đỏ                      2
                 (2, 0), -- Không đá
                 (2, 3), -- 30% đá
                 (2, 5), -- 50% đá
                 (2, 7), -- 70% đá
                 (2, 1), -- 100% đá
                 (2, -1), -- Làm nóng
-            --Sữa Tươi Khoai Môn Hoàng Kim       3
+            -- Sữa Tươi Khoai Môn Hoàng Kim       3
                 (3, 0), -- Không đá
                 (3, 3), -- 30% đá
                 (3, 5), -- 50% đá
                 (3, 7), -- 70% đá
                 (3, 1), -- 100% đá
                 (3, -1), -- Làm nóng
-            --Sữa Tươi Trân Châu Baby kem Cafe   4
+            -- Sữa Tươi Trân Châu Baby kem Cafe   4
                 (4, 1), -- 100% đá
-            --Ô Long Trân Châu Baby Kem Cafe     5
+            -- Ô Long Trân Châu Baby Kem Cafe     5
                 (4, 1), -- 100% đá
-            --Trà Xanh                           6
+            -- Trà Xanh                           6
                 (6, 0), -- Không đá
                 (6, 3), -- 30% đá
                 (6, 5), -- 50% đá
                 (6, 7), -- 70% đá
                 (6, 1), -- 100% đá
                 (6, -1), -- Làm nóng
-            --Trà Sữa Ba Anh Em                  7
+            -- Trà Sữa Ba Anh Em                  7
                 (7, 0), -- Không đá
                 (7, 3), -- 30% đá
                 (7, 5), -- 50% đá
                 (7, 7), -- 70% đá
                 (7, 1), -- 100% đá
                 (7, -1), -- Làm nóng
-            --Trà Xanh Sữa Vị Nhài               8
+            -- Trà Xanh Sữa Vị Nhài               8
                 (8, 0), -- Không đá
                 (8, 3), -- 30% đá
                 (8, 5), -- 50% đá
                 (8, 7), -- 70% đá
                 (8, 1), -- 100% đá
                 (8, -1), -- Làm nóng
-            --Trà Sữa Hạnh Phúc                  9
+            -- Trà Sữa Hạnh Phúc                  9
                 (9, 0), -- Không đá
                 (9, 3), -- 30% đá
                 (9, 5), -- 50% đá
                 (9, 7), -- 70% đá
                 (9, 1), -- 100% đá
                 (9, -1), -- Làm nóng
-            --Trà Sữa Matcha                     10
+            -- Trà Sữa Matcha                     10
                 (10, 0), -- Không đá
                 (10, 3), -- 30% đá
                 (10, 5), -- 50% đá
                 (10, 7), -- 70% đá
                 (10, 1), -- 100% đá
                 (10, -1), -- Làm nóng
-            --Trà Sữa Ô Long                     11
+            -- Trà Sữa Ô Long                     11
                 (11, 0), -- Không đá
                 (11, 3), -- 30% đá
                 (11, 5), -- 50% đá
                 (11, 7), -- 70% đá
                 (11, 1), -- 100% đá
                 (11, -1), -- Làm nóng
-            --Ô Long Thái Cực                    12
+            -- Ô Long Thái Cực                    12
                 (12, 0), -- Không đá
                 (12, 3), -- 30% đá
                 (12, 5), -- 50% đá
                 (12, 7), -- 70% đá
                 (12, 1), -- 100% đá
                 (12, -1), -- Làm nóng
-            --Trà Sữa Caramal Grilles 130        13
+            -- Trà Sữa Caramal Grilles 130        13
                 (13, 0), -- Không đá
                 (13, 3), -- 30% đá
                 (13, 5), -- 50% đá
                 (13, 7), -- 70% đá
                 (13, 1), -- 100% đá
                 (13, -1), -- Làm nóng
-            --Trà Sữa Khoai Môn Hoàng Kim        14
+            -- Trà Sữa Khoai Môn Hoàng Kim        14
                 (14, 0), -- Không đá
                 (14, 3), -- 30% đá
                 (14, 5), -- 50% đá
                 (14, 7), -- 70% đá
                 (14, 1), -- 100% đá
                 (14, -1), -- Làm nóng
-            --Trà Sữa Bạc Hà                     15
+            -- Trà Sữa Bạc Hà                     15
                 (15, 0), -- Không đá
                 (15, 3), -- 30% đá
                 (15, 5), -- 50% đá
                 (15, 7), -- 70% đá
                 (15, 1), -- 100% đá
                 (15, -1), -- Làm nóng
-            --Trà Sữa Dâu Tây                    16
+            -- Trà Sữa Dâu Tây                    16
                 (16, 0), -- Không đá
                 (16, 3), -- 30% đá
                 (16, 5), -- 50% đá
                 (16, 7), -- 70% đá
                 (16, 1), -- 100% đá
                 (16, -1), -- Làm nóng
-            --Trà Sữa Trân Châu Hoàng Gia        17
+            -- Trà Sữa Trân Châu Hoàng Gia        17
                 (17, 0), -- Không đá
                 (17, 3), -- 30% đá
                 (17, 5), -- 50% đá
                 (17, 7), -- 70% đá
                 (17, 1), -- 100% đá
                 (17, -1), -- Làm nóng
-            --Hồng Trà                           18
+            -- Hồng Trà                           18
                 (18, 0), -- Không đá
                 (18, 3), -- 30% đá
                 (18, 5), -- 50% đá
                 (18, 7), -- 70% đá
                 (18, 1), -- 100% đá
                 (18, -1), -- Làm nóng
-            --Trà Sữa Panda                      19
+            -- Trà Sữa Panda                      19
                 (19, 0), -- Không đá
                 (19, 3), -- 30% đá
                 (19, 5), -- 50% đá
                 (19, 7), -- 70% đá
                 (19, 1), -- 100% đá
                 (19, -1), -- Làm nóng
-            --Trà Sữa Kim Cương Đen Okinawa      20
+            -- Trà Sữa Kim Cương Đen Okinawa      20
                 (20, 0), -- Không đá
                 (20, 3), -- 30% đá
                 (20, 5), -- 50% đá
                 (20, 7), -- 70% đá
                 (20, 1), -- 100% đá
                 (20, -1), -- Làm nóng
-            --Trà Sữa Socola                     21
+            -- Trà Sữa Socola                     21
                 (21, 0), -- Không đá
                 (21, 3), -- 30% đá
                 (21, 5), -- 50% đá
                 (21, 7), -- 70% đá
                 (21, 1), -- 100% đá
                 (21, -1), -- Làm nóng
-            --Trà Sữa                            22
+            -- Trà Sữa                            22
                 (22, 0), -- Không đá
                 (22, 3), -- 30% đá
                 (22, 5), -- 50% đá
@@ -725,65 +725,65 @@ insert into ProductIce(product_id, ice_id) values
                 (22, 1), -- 100% đá
                 (22, -1), -- Làm nóng
         -- Fresh Fruit Tea
-            --Trà Dứa Hồng Hạc                   23
+            -- Trà Dứa Hồng Hạc                   23
                 (23, 0), -- Không đá
                 (23, 3), -- 30% đá
                 (23, 5), -- 50% đá
                 (23, 7), -- 70% đá
                 (23, 1), -- 100% đá
                 (23, -1), -- Làm nóng
-            --Hồng Long Xoài Trân Châu Baby      24
+            -- Hồng Long Xoài Trân Châu Baby      24
                 (24, 1), -- 100% đá
-            --Probi Bưởi Chân Châu Sương Mai     25
+            -- Probi Bưởi Chân Châu Sương Mai     25
                 (25, 0), -- Không đá
                 (25, 3), -- 30% đá
                 (25, 5), -- 50% đá
                 (25, 7), -- 70% đá
                 (25, 1), -- 100% đá
                 (25, -1), -- Làm nóng
-            --Probi Xoài Trân Châu Sương Mai     26
+            -- Probi Xoài Trân Châu Sương Mai     26
                 (26, 0), -- Không đá
                 (26, 3), -- 30% đá
                 (26, 5), -- 50% đá
                 (26, 7), -- 70% đá
                 (26, 1), -- 100% đá
                 (26, -1), -- Làm nóng
-            --Trà Xanh Chanh Leo                 27
+            -- Trà Xanh Chanh Leo                 27
                 (27, 0), -- Không đá
                 (27, 3), -- 30% đá
                 (27, 5), -- 50% đá
                 (27, 7), -- 70% đá
                 (27, 1), -- 100% đá
                 (27, -1), -- Làm nóng
-            --Trà Xanh Xoài                      28
+            -- Trà Xanh Xoài                      28
                 (28, 0), -- Không đá
                 (28, 3), -- 30% đá
                 (28, 5), -- 50% đá
                 (28, 7), -- 70% đá
                 (28, 1), -- 100% đá
                 (28, -1), -- Làm nóng
-            --Trà Dứa Nhiệt Đới                  29
+            -- Trà Dứa Nhiệt Đới                  29
                 (29, 0), -- Không đá
                 (29, 3), -- 30% đá
                 (29, 5), -- 50% đá
                 (29, 7), -- 70% đá
                 (29, 1), -- 100% đá
                 (29, -1), -- Làm nóng
-            --Hồng Long Pha Lê Tuyết             30
+            -- Hồng Long Pha Lê Tuyết             30
                 (30, 0), -- Không đá
                 (30, 3), -- 30% đá
                 (30, 5), -- 50% đá
                 (30, 7), -- 70% đá
                 (30, 1), -- 100% đá
                 (30, -1), -- Làm nóng
-            --Hồng Long Bạch Ngọc                31
+            -- Hồng Long Bạch Ngọc                31
                 (31, 0), -- Không đá
                 (31, 3), -- 30% đá
                 (31, 5), -- 50% đá
                 (31, 7), -- 70% đá
                 (31, 1), -- 100% đá
                 (31, -1), -- Làm nóng
-            --Hồng Trà Bưởi Mật Ong              32
+            -- Hồng Trà Bưởi Mật Ong              32
                 (32, 0), -- Không đá
                 (32, 3), -- 30% đá
                 (32, 5), -- 50% đá
@@ -791,60 +791,60 @@ insert into ProductIce(product_id, ice_id) values
                 (32, 1), -- 100% đá
                 (32, -1), -- Làm nóng
         -- Macchiat
-            --Ô Long Kem Phô Mai                 33
+            -- Ô Long Kem Phô Mai                 33
                 (33, 7), -- 70% đá
                 (33, 1), -- 100% đá
-            --Dâu Tằm Kem Phô Mai                34
+            -- Dâu Tằm Kem Phô Mai                34
                 (34, 7), -- 70% đá
                 (34, 1), -- 100% đá
-            --Hồng Trà Kem Phô Mai               35
+            -- Hồng Trà Kem Phô Mai               35
                 (35, 7), -- 70% đá
                 (35, 1), -- 100% đá
-            --Trà Xanh Kem Phô Mai               36
+            -- Trà Xanh Kem Phô Mai               36
                 (36, 0), -- Không đá
                 (36, 3), -- 30% đá
                 (36, 5), -- 50% đá
                 (36, 7), -- 70% đá
                 (36, 1), -- 100% đá
                 (36, -1), -- Làm nóng
-            --Socola Kem Phô Mai                 37
+            -- Socola Kem Phô Mai                 37
                 (37, 7), -- 70% đá
                 (37, 1), -- 100% đá
-            --Matcha Kem Phô Mai                 38
+            -- Matcha Kem Phô Mai                 38
                 (38, 0), -- Không đá
                 (38, 7), -- 70% đá
                 (38, 1), -- 100% đá
         -- Special Drink
-            --Song Long Bạch Ngọc                39
+            -- Song Long Bạch Ngọc                39
                 (39, 1), -- 100% đá
-            --Choco Creamcake Hạt Dẻ             40
+            -- Choco Creamcake Hạt Dẻ             40
                 (40, 1), -- 100% đá
-            --Ruby Creamcake Hạt Dẻ              41
+            -- Ruby Creamcake Hạt Dẻ              41
                 (41, 1), -- 100% đá
-            --Chanh Leo Trân Châu Sương Mai      42
+            -- Chanh Leo Trân Châu Sương Mai      42
                 (42, 1), -- 100% đá
-            --Probi Bưởi Trân Châu Sương Mai     43
+            -- Probi Bưởi Trân Châu Sương Mai     43
                 (43, 0), -- Không đá
                 (43, 3), -- 30% đá
                 (43, 5), -- 50% đá
                 (43, 7), -- 70% đá
                 (43, 1), -- 100% đá
                 (43, -1), -- Làm nóng
-            --Probi Xoài Trân Châu Sương Mai     44
+            -- Probi Xoài Trân Châu Sương Mai     44
                 (44, 0), -- Không đá
                 (44, 3), -- 30% đá
                 (44, 5), -- 50% đá
                 (44, 7), -- 70% đá
                 (44, 1), -- 100% đá
                 (44, -1), -- Làm nóng
-            --Cream - Catcher Cafe               45
+            -- Cream - Catcher Cafe               45
                 (45, 0), -- Không đá
                 (45, 3), -- 30% đá
                 (45, 5), -- 50% đá
                 (45, 7), -- 70% đá
                 (45, 1), -- 100% đá
                 (45, -1), -- Làm nóng
-            --Energy - Booster Cafe              46
+            -- Energy - Booster Cafe              46
                 (46, 0), -- Không đá
                 (46, 3), -- 30% đá
                 (46, 5), -- 50% đá
@@ -852,10 +852,10 @@ insert into ProductIce(product_id, ice_id) values
                 (46, 1), -- 100% đá
                 (46, -1); -- Làm nóng 
         -- Beauty Drinks
-            --Sữa Chua Thanh Long Hạt Dẻ         47
-            --Sữa Chua Dâu Tằm Hoàng Kim         48
-            --Sữa Chua Dâu Tằm Hạt Dẻ            49
-            --Sữa Chua Trắng                     50 -- 
+            -- Sữa Chua Thanh Long Hạt Dẻ         47
+            -- Sữa Chua Dâu Tằm Hoàng Kim         48
+            -- Sữa Chua Dâu Tằm Hạt Dẻ            49
+            -- Sữa Chua Trắng                     50 -- 
                         
 create table InvoiceDetail(
 	invoice_no int not null,
